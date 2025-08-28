@@ -1,61 +1,43 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
     background-color: #030d30;
     color: #fcc80d;
-    line-height: 1.5;
 }
 
 header {
-    background-color: #00072d;
-    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 20px;
+    background-color: #00072d;
 }
 
 header .logo h1 {
     font-size: 24px;
 }
 
-nav a {
-    color: #fcc80d;
-    margin-left: 15px;
-    text-decoration: none;
+nav button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fcc80d;
+    color: #030d30;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background-color: #030d30;
 }
 
-.hero h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-}
-
-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#planos .planos-container {
+.planos-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .plano {
@@ -63,16 +45,18 @@ section {
     padding: 20px;
     border-radius: 12px;
     width: 250px;
-    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.plano .preco {
-    font-size: 24px;
-    font-weight: bold;
+.plano:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #fcc80d;
 }
 
 .plano.destaque {
-    border: 2px solid #fcc80d;
+    border: 3px solid #fcc80d;
+    background: linear-gradient(135deg, #fcc80d 0%, #ffd633 100%);
+    color: #030d30;
 }
 
 .plano .tag {
@@ -80,63 +64,20 @@ section {
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fcc80d;
-    color: #030d30;
+    background-color: #ff3c3c;
+    color: white;
     padding: 5px 10px;
     border-radius: 20px;
     font-weight: bold;
 }
 
-button {
-    margin-top: 15px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    background-color: #fcc80d;
-    color: #030d30;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-#avaliacoes form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto 20px;
-}
-
-#avaliacoes input, #avaliacoes select, #avaliacoes textarea {
-    margin-bottom: 10px;
-    padding: 8px;
-    border-radius: 6px;
-    border: none;
-    font-size: 16px;
-}
-
-#avaliacoes-publicas ul {
-    list-style: none;
-}
-
-.faq {
-    margin-bottom: 20px;
-    text-align: left;
-    max-width: 600px;
-    margin: 0 auto 20px;
-}
-
-#contato a {
-    color: #fcc80d;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer {
-    background-color: #00072d;
-    padding: 15px;
+#avaliacoes-dinamicas {
+    margin-top: 20px;
+    font-size: 18px;
+    min-height: 60px;
     text-align: center;
-    color: #fcc80d;
 }
+button {
+    margin-top: 10px;
+}
+
