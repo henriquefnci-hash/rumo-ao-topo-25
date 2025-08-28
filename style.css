@@ -1,8 +1,21 @@
+/* Fontes globais */
 body {
-    font-family: Lalezar, sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin: 0;
     background-color: #030d30;
     color: #fcc80d;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lalezar', cursive;
+}
+
+/* Texto normal já usa Oswald (herdado do body) */
+p, li, input, textarea, button {
+    font-family: 'Oswald', sans-serif;
+}
+
 }
 
 header {
