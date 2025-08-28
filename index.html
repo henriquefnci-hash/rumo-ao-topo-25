@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<!-- Ocorrências -->
+<section data-view="admin-ocorrencias" hidden>
+<h2>Ocorrências</h2>
+<div id="occ-admin"></div>
+</section>
 
+
+<section data-view="aluno-ocorrencias" hidden>
+<h2>Minhas Ocorrências</h2>
+<div id="occ-aluno"></div>
+</section>
+
+
+<!-- Listas -->
+<section data-view="admin-listas" hidden>
+<h2>Listas</h2>
+<form id="lista-form">
+<input type="text" placeholder="Título" id="lista-titulo" required>
+<textarea placeholder="Descrição" id="lista-desc"></textarea>
+<input type="date" id="lista-prazo" required>
+<input type="file" id="lista-pdf" accept="application/pdf" required>
+<button type="submit">Criar Lista</button>
+</form>
+<div id="listas-admin"></div>
+</section>
+
+
+<section data-view="aluno-listas" hidden>
+<h2>Listas</h2>
+<div id="listas-aluno"></div>
+</section>
+
+
+<!-- Avisos & Enquetes -->
+<section data-view="admin-avisos" hidden>
+<h2>Avisos & Enquetes</h2>
+<form id="aviso-form">
+<input type="text" id="aviso-titulo" placeholder="Título" required>
+<textarea id="aviso-corpo" placeholder="Corpo"></textarea>
+<button type="submit">Publicar Aviso</button>
+</form>
+<div id="avisos-admin"></div>
+</section>
+
+
+<section data-view="aluno-avisos" hidden>
+<h2>Avisos & Enquetes</h2>
+<div id="avisos-aluno"></div>
+</section>
+
+
+<!-- Chat -->
+<section data-view="chat" hidden>
+<h2>Chat</h2>
+<div id="chat-box"></div>
+<form id="chat-form">
+<input type="text" id="chat-msg" placeholder="Mensagem..." required>
+<button type="submit">Enviar</button>
+</form>
+</section>
+</main>
+
+
+<script src="db.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
