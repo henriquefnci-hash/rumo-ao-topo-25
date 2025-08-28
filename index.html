@@ -3,20 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal RAT - Planos e Avaliações</title>
+    <title>Portal RAT - Dinâmico</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <!-- Espaço para o logo circular do RAT -->
-            <h1>RAT</h1>
-        </div>
+        <div class="logo"><h1>RAT</h1></div>
         <nav>
-            <a href="#planos">Planos</a>
-            <a href="#avaliacoes">Avaliações</a>
-            <a href="#faqs">FAQs</a>
-            <a href="#contato">Contato</a>
+            <button id="btn-login">Login</button>
         </nav>
     </header>
 
@@ -32,79 +26,33 @@
                 <h3>Avulso</h3>
                 <p class="preco">R$ 0,85 - 2,50</p>
                 <p>Acesso temporário a listas individuais</p>
-                <button onclick="alert('Selecionou o plano Avulso')">Quero esse plano</button>
+                <button>Quero esse plano</button>
             </div>
             <div class="plano destaque">
                 <span class="tag">Mais popular</span>
                 <h3>Premium</h3>
                 <p class="preco">R$ 8,50</p>
-                <p>Acesso completo a todas as listas, conteúdos extras e suporte</p>
-                <button onclick="alert('Selecionou o plano Premium')">Quero esse plano</button>
+                <p>Acesso completo a todas as listas e conteúdos extras</p>
+                <button>Quero esse plano</button>
             </div>
             <div class="plano">
                 <h3>Básico</h3>
                 <p class="preco">R$ 6,50</p>
                 <p>Acesso a listas principais e suporte básico</p>
-                <button onclick="alert('Selecionou o plano Básico')">Quero esse plano</button>
+                <button>Quero esse plano</button>
             </div>
         </div>
     </section>
 
-    <section id="ultimas-listas">
-        <h2>Últimas Listas</h2>
-        <ul id="listas">
-            <li>Lista de Matemática - Geometria</li>
-            <li>Lista de Português - Orações</li>
-            <li>Lista de Física - Leis de Newton</li>
-        </ul>
-    </section>
-
     <section id="avaliacoes">
         <h2>Avaliações</h2>
-        <form id="form-avaliacao">
-            <input type="text" id="nome" placeholder="Seu nome" required>
-            <select id="estrelas" required>
-                <option value="">Avaliação (0 a 5)</option>
-                <option value="0">0 ⭐</option>
-                <option value="1">1 ⭐</option>
-                <option value="2">2 ⭐</option>
-                <option value="3">3 ⭐</option>
-                <option value="4">4 ⭐</option>
-                <option value="5">5 ⭐</option>
-            </select>
-            <textarea id="comentario" placeholder="Comentário" required></textarea>
-            <button type="submit">Enviar Avaliação</button>
-        </form>
-        <div id="avaliacoes-publicas">
-            <h3>Avaliações 5 estrelas</h3>
-            <ul id="lista-avaliacoes"></ul>
+        <div id="avaliacoes-dinamicas">
+            <!-- Avaliações vão aparecer aqui, uma de cada vez -->
+        </div>
+        <div>
+            <button id="btn-excluir">Excluir todas avaliações</button>
         </div>
     </section>
-
-    <section id="faqs">
-        <h2>FAQs</h2>
-        <div class="faq">
-            <h4>Como posso acessar as listas?</h4>
-            <p>Após escolher um plano, você terá acesso imediato às listas correspondentes.</p>
-        </div>
-        <div class="faq">
-            <h4>O que é o plano Premium?</h4>
-            <p>O plano Premium oferece acesso completo a todas as listas, conteúdos extras e suporte prioritário.</p>
-        </div>
-        <div class="faq">
-            <h4>Posso cancelar meu plano?</h4>
-            <p>Sim! Basta entrar em contato pelo WhatsApp e solicitar o cancelamento.</p>
-        </div>
-    </section>
-
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>WhatsApp: <a href="https://wa.me/5512992416782" target="_blank">+55 12 99241-6782</a></p>
-    </section>
-
-    <footer>
-        <p>© 2025 RAT - Todos os direitos reservados</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
